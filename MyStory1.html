@@ -1,0 +1,257 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- persain keyboard -->
+    <script language="javascript" src="./dist/js/farsitype.js" type="text/javascript"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/MyStory2.css">
+    <link rel="stylesheet" type="text/safari" href="./styles/css/safari_style_Mystory1.css ">
+    <title>MyStory1</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-100 justify-content-center">
+            <div class="col-12 col-md-9 col-lg-8 col-xl-6 d-flex  flex-column background_div">
+                <!-- submit button -->
+                <div class="row pl-3 pl-lg-5 justify-content-end">
+                    <div class="col-4 d-flex justify-content-start align-items-center">
+                        <button class="submitbutton text-white btn mt-5" type="submit" id="sabt1">
+                            مرحله بعد</button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <button class="submitbutton text-white btn mt-5" type="submit" id="sabt1">
+                            ثبت</button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center"> <button
+                            class="submitbutton text-white btn mt-5" type="submit" id="sabt1">
+                            مرحله قبل</button></div>
+                </div>
+                <!-- end submit button -->
+
+                <!-- MyStory1 image -->
+                <div class="row justify-content-center" id="img_div">
+                    <img src="./image/Shape 1.png" alt="img" class="MyStory2_img img-fluid">
+                </div>
+                <!-- end MyStory1 image -->
+
+                <!-- row 1 -->
+                <div class="row MyStory2_row justify-content-center mt-4 no-gutters" id="MyStory2_firstrow">
+                    <!-- year 1 -->
+                    <div class="col-2 d-flex">
+                        <div class="form__group field d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year1" name="year1" id='d11'
+                                onkeypress="return isNumber(event)" maxlength="4" required />
+                            <label for="d11" class="form__label ">سال </label>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h4 class="taxt-left mr-2 mr-lg-3" style="margin-top: 21px;">تا</h4>
+                        </div>
+                    </div>
+                    <!-- end year 1 -->
+
+                    <!-- year 2 -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="form__group field col-8 d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year2" name="year2" id='d12'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d12" class="form__label pr-1">سال </label>
+                        </div>
+                    </div>
+                    <!-- end year 2 -->
+
+                    <!-- elementary School -->
+                    <div class="col-7 ">
+                        <div class="form__group field d-flex col-11 justify-content-start ">
+                            <input type="text" class="form__field text-right" placeholder="elementary School"
+                                name="elementary School" id='d1' lang="fa" style="padding-right: 15px;" required />
+                            <label for="d1" class="form__label" style="padding-right: 15px;">
+                                دبستان</label>
+                        </div>
+                    </div>
+                    <!-- end elementary School -->
+
+
+                </div>
+                <!-- end row 1 -->
+
+                <!-- row 2 -->
+                <div class="row MyStory2_row mt-2 justify-content-center no-gutters">
+                    <!-- year 1 -->
+                    <div class="col-2 d-flex">
+                        <div class="form__group field d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year3" name="year3" id='d21'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d21" class="form__label ">سال </label>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h4 class="taxt-left mr-2 mr-lg-3" style="margin-top: 21px;">تا</h4>
+                        </div>
+                    </div>
+                    <!-- end year 1 -->
+
+                    <!-- year 2 -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="form__group field col-8 d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year4" name="year4" id='d22'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d22" class="form__label pr-1">سال </label>
+                        </div>
+                    </div>
+                    <!-- end year 2 -->
+
+                    <!-- Junior School -->
+                    <div class="col-7 ">
+                        <div class="form__group field d-flex col-11 justify-content-start">
+                            <input type="text" class="form__field text-right" placeholder="Junior School"
+                                name="Junior Schooll" id='d2' lang="fa" style="padding-right: 15px;" required />
+                            <label for="d2" class="form__label" style="padding-right: 15px;">
+                                راهنمایی</label>
+                        </div>
+                    </div>
+                    <!-- end Junior School -->
+
+                    <!-- plus icon -->
+                    <!-- <div class="col-1 d-flex justify-content-end align-items-center">
+                        <a href="#" class="mt-4">
+                            <img src="./image/Plus.png" alt="icon" style="width: 25px; height: 25px;">
+                        </a>
+                    </div> -->
+                    <!-- end plus icon -->
+                </div>
+                <!-- end row 2 -->
+
+                <!-- row 3 -->
+                <div class="row MyStory2_row mt-2 justify-content-center no-gutters">
+                    <!-- year 1 -->
+                    <div class="col-2 d-flex">
+                        <div class="form__group field d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year5" name="year5" id='d31'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d31" class="form__label ">سال </label>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h4 class="taxt-left mr-2 mr-lg-3" style="margin-top: 21px;">تا</h4>
+                        </div>
+                    </div>
+                    <!-- end year 1 -->
+
+                    <!-- year 2 -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="form__group field col-8 d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year6" name="year6" id='d32'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d32" class="form__label pr-1">سال </label>
+                        </div>
+                    </div>
+                    <!-- end year 2 -->
+
+                    <!-- high school -->
+                    <div class="col-7 ">
+                        <div class="form__group field d-flex col-11 justify-content-start ">
+                            <input type="text" class="form__field text-right" placeholder="high school"
+                                name="high school" id='d3' lang="fa" style="padding-right: 15px;" required />
+                            <label for="d3" class="form__label" style="padding-right: 15px;">
+                                دبیرستان</label>
+                        </div>
+                    </div>
+                    <!-- end high school -->
+
+                    <!-- plus icon -->
+                    <!-- <div class="col-1 d-flex justify-content-end align-items-center">
+                        <a href="#" class="mt-4">
+                            <img src="./image/Plus.png" alt="icon" style="width: 25px; height: 25px;">
+                        </a>
+                    </div> -->
+                    <!-- end plus icon -->
+                </div>
+                <!-- end row 3 -->
+
+                <!-- row 4 -->
+                <div class="row MyStory2_row justify-content-center mt-2 no-gutters">
+                    <!-- year 1 -->
+                    <div class="col-2 d-flex">
+                        <div class="form__group field d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year7" name="year7" id='d41'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d41" class="form__label ">سال </label>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h4 class="taxt-left mr-2 mr-lg-3" style="margin-top: 21px;">تا</h4>
+                        </div>
+                    </div>
+                    <!-- end year 1 -->
+
+                    <!-- year 2 -->
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="form__group field col-8 d-flex justify-content-center">
+                            <input type="tel" class="form__field text-center" placeholder="year8" name="year8" id='d42'
+                                maxlength="4" onkeypress="return isNumber(event)" required />
+                            <label for="d42" class="form__label pr-1">سال </label>
+                        </div>
+                    </div>
+                    <!-- end year 2 -->
+
+                    <!-- university School -->
+                    <div class="col-7 ">
+                        <div class="form__group field d-flex col-11 justify-content-start ">
+                            <input type="text" class="form__field text-right" placeholder="university School"
+                                name="university School" id='d4' lang="fa" style="padding-right: 15px;" required />
+                            <label for="d4" class="form__label" style="padding-right: 15px;">
+                                دانشگاه</label>
+                        </div>
+                    </div>
+                    <!-- end university School -->
+
+                    <!-- plus icon -->
+                    <!-- <div class="col-1 d-flex justify-content-end align-items-center">
+                        <a href="#" class="mt-4">
+                            <img src="./image/Plus.png" alt="icon" style="width: 25px; height: 25px;">
+                        </a>
+                    </div> -->
+                    <!-- end plus icon -->
+                </div>
+                <!-- end row 4 -->
+            </div>
+        </div>
+    </div>
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()" style="background-color: red;">Show Snackbar</button> -->
+    <!-- <div id="snackbar">لطفا زبان کیبرد خود را به فارسی تغیر دهید</div> -->
+    <div id="snackbar2">سال وارد نمایید!</div>
+    <!-- end snackbar -->
+
+
+    <script>
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                myFunction2();
+                return false;
+            }
+            return true;
+        }
+        // snackbar
+        // function myFunction() {
+        //     var x = document.getElementById("snackbar");
+        //     x.className = "show";
+        //     setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        // }
+        //end snackbar
+        // snackbar
+        function myFunction2() {
+            var x = document.getElementById("snackbar2");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+    </script>
+</body>
+
+</html>

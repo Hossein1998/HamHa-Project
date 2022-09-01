@@ -1,0 +1,45 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SignUp4.css">
+    <title>SignUp4</title>
+</head>
+
+<body class="background_div">
+    <div class="container-fluid">
+        <div class="row h-100 justify-content-center">
+            <div class="col-12 d-flex flex-column ">
+                <div class="help_div d-flex justify-content-center align-items-end">
+                    <img src="./image/logo.png" alt="logo" class="logo_img">
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <h5 class="wlecome_txt text-center d-inline"> سید محمد علی رحبانی</h5>
+                    <h5 class="wlecome_txt text-center d-inline mr-1">به هم ها خوش آمدید. </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()" style="background-color: red;">Show Snackbar</button> -->
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+    </script>
+</body>
+
+</html>

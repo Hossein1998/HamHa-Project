@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SetPicture.css">
+    <title>SetPicture</title>
+
+</head>
+
+<body class="background_div">
+
+    <!-- back click -->
+    <div class="ml-0">
+        <ul class="backclick_ul">
+            <li class="nav-item"><a href="#" class="back_link">
+                    <img src="./image/back3.png" class="back_icon" alt="icon">
+                </a></li>
+        </ul>
+    </div>
+    <!-- end  back click -->
+    <div class="container-fluid">
+        <div class="row h-100 justify-content-center ">
+            <div class="col-12 d-flex justify-content-center d-flex flex-column">
+                <div class="img_div d-flex flex-column">
+                    <img class=" preview1 mt-1 mx-auto" src="./image/user.png">
+                    <input id="upload1" type="file" accept="image/*" />
+                    <h5 class="username d-inline mx-auto mt-3 text-right text-justify text-nowrap">عکس قدیمی من
+                    </h5>
+                    <img class="preview2 mt-2 mx-auto" src="./image/user.png">
+                    <input id="upload2" type="file" accept="image/*" />
+                    <h5 class="username d-inline mx-auto mt-3 text-right text-justify text-nowrap"> عکس جدید من
+                    </h5>
+                    <!-- edit button -->
+                    <button class="enterbutton btn btn-block mx-auto" id="enterbutton" type="submit">
+                        ثبت</button>
+                    <!-- end edit button -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()" style="background-color: red;">Show Snackbar</button> -->
+    <!-- <div id="snackbar">Some text some message..</div> -->
+    <!-- end snackbar -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+        // set profile image
+        $(".preview1").click(function () {
+            $("#upload1").click();
+        });
+
+        $("#upload1").change(function () {
+            preview1(this);
+        });
+
+        function preview1(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.preview1').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $(".preview2").click(function () {
+            $("#upload2").click();
+        });
+
+        $("#upload2").change(function () {
+            preview2(this);
+        });
+
+        function preview2(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.preview2').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        //end set profile image
+    </script>
+
+
+</body>
+
+</html>

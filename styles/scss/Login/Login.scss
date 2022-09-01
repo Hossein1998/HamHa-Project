@@ -1,0 +1,79 @@
+@import "./../base";
+@import "./Login_inputs";
+
+.background_div {
+  background-image: url("./../../image/Login.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  // background-attachment: local;
+}
+@media (min-width: 768px) {
+  .background_div {
+    background-image: url("./../../image/page2.png");
+  }
+}
+
+img {
+  width: 33px;
+  height: 33px;
+}
+.small_txt {
+  color: $jigari;
+  font-size: 15px;
+  &:hover {
+    color: $jigari;
+  }
+}
+.enterbutton {
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  width: 83%;
+  height: 100px;
+  font-size: 23px;
+  height: 55px;
+  color: $white;
+  background-color: $Navy_blue;
+  border: none;
+  border-radius: 25px;
+  align-items: center;
+
+  &.enterbutton:hover,
+  :focus {
+    color: $white;
+    border: none;
+  }
+
+  @media (max-width: 767px) {
+    width: 87%;
+  }
+}
+
+.forgot_password {
+  @media (min-width: 481px) and (max-width: 669px) {
+    margin-right: 20px;
+  }
+  @media (min-width: 670px) and (max-width: 767px) {
+    margin-right: 30px;
+  }
+  @media (min-width: 768px) and (max-width: 930px) {
+    margin-right: 20px;
+  }
+  @media (min-width: 931px) and (max-width: 1024px) {
+    margin-right: 31px;
+  }
+  @media (min-width: 1025px) and (max-width: 1100px) {
+    margin-right: 26px;
+  }
+  @media (min-width: 1101px) and (max-width: 1280px) {
+    margin-right: 35px;
+  }
+  @media (min-width: 1281px) and (max-width: 1400px) {
+    margin-right: 32px;
+  }
+  @media (min-width: 1401px) {
+    margin-right: 52px;
+  }
+}

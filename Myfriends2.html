@@ -1,0 +1,165 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/Myfriends2.css">
+    <link rel="stylesheet" href="./styles/css/Search.css">
+    <title>Myfriends2</title>
+</head>
+
+<body class="background_div">
+    <div class="container-fluid">
+        <div class="row h-100 justify-content-center">
+            <div class="col-12 col-md-9 col-lg-8 col-xl-7 d-flex flex-column" id="cc">
+                <!-- filter and search icon -->
+                <div class="row justify-content-center mt-4 pl-1 pr-1 pl-lg-3  pr-lg-3 pl-xl-5 pr-xl-5">
+                    <div class="col-4 d-flex justify-content-start" style=" height: 50px;">
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <img src="./image/back2.png" alt="icon" style="width: 50px; height: 50px;">
+                        </a>
+                    </div>
+                </div>
+                <!-- end filter and search icon -->
+
+
+                <!-- tabs -->
+                <div class="tabs">
+                    <div class="ml-0 mt-3 ">
+                        <ul class="tab_ul mx-auto">
+                            <li class="nav-item w-50"><a href="#" class="tab_link">
+                                    <h5 class="menu_txt_tab" id="newform"> علاقه مندی ها</h5>
+                                </a></li>
+                            <li class="nav-item w-50"><a href="#" class="tab_link">
+                                    <h5 class="menu_txt_tab" id="fromsubmited">دوستان من</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end tabs -->
+                <!-- user row1 -->
+                <div
+                    class="user_row row justify-content-center  mt-3 mr-1 ml-1 mr-lg-2 ml-lg-2 mr-xl-5 ml-xl-5 no-gutters">
+                    <div class="col-1 d-flex justify-content-end align-items-center">
+                        <!-- next icon -->
+                        <a href="#">
+                            <img src="./image/Arrow1.png" alt="icon" style="height: 15px; width: 15px;">
+                        </a>
+                    </div>
+                    <!-- end next -->
+
+                    <!-- image -->
+                    <div class="col-3 col-xl-2 d-flex justify-content-center align-items-center">
+                        <img src="./image/bill.jpg" class="useer_img" alt="image">
+                    </div>
+                    <!-- end image -->
+
+                    <!-- back icon -->
+                    <div class="col-1 d-flex justify-content-start align-items-center">
+                        <a href="#">
+                            <img src="./image/Arrow2.png" alt="icon" style="height: 15px; width: 15px;">
+                        </a>
+                    </div>
+                    <!-- end back icon -->
+
+                    <!-- user details -->
+                    <div class="col-5 col-xl-6  d-flex flex-column  justify-content-start">
+                        <p class="user_name text-right text-xl-right text-white">سید محمد
+                            علی رحبانی
+                        </p>
+                        <p class="nick_name text-right text-xl-right mt-2 ml-xl-4">معروف به سید رحبون</p>
+                        <div class="d-flex justify-content-start justify-content-xl-start text-white ml-xl-5">
+                            <p class="local text-center text-xl-center p-1"> هم
+                                محله ای</p>
+                            <p class="city text-center text-xl-center p-1 ">
+                                هم
+                                شهری</p>
+                        </div>
+                    </div>
+                    <!-- end  user details -->
+
+                    <!-- add friends and info icon -->
+                    <div class="col-2 d-flex pl-2 flex-column justify-content-center align-items-center">
+                        <a href="#popup1">
+                            <img src="./image/Info (Details).png" alt="icon" style="width: 35px; height: 35px;">
+                        </a>
+
+                    </div>
+
+                    <!-- end add friends and info icon -->
+                    <!-- popup -->
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <a href="#"><img src="./image/Exit2.png" class="float-right" alt="icon"
+                                    style="width: 20px; height: 20px;"></a>
+                            <div class="content text-center mt-4">
+                                <p> مبلغ <span>2000</span> ریال از کیف پول شما کم میشود آیا مایل هستید؟ </p>
+                                <div>
+                                    <a href="#"
+                                        class="button buttonN popup_button text-white text-decoration-none">خیر</a>
+                                    <a href="#popup2" id="Balee"
+                                        class="button buttonY popup_button text-white text-decoration-none">بله</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popup2" class="overlay">
+                        <div class="popup">
+                            <a href="#"><img src="./image/Exit2.png" class="float-right" alt="icon"
+                                    style="width: 20px; height: 20px;"></a>
+                            <div class="content text-center mt-1">
+                                <h5 id="popupname">
+                                    سید محمد علی رحبانی
+                                </h5>
+                                <div>
+                                    <h5 class="float-right"> تلگرام :</h5>
+                                    <h5 class="float-left" style="direction: ltr;">@smarten</h5>
+                                </div>
+                                <div class="mt-5">
+                                    <h5 class="float-right"> اینستاگرام :</h5>
+                                    <h5 class="float-left" style="direction: ltr;">@smarten</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end popup -->
+                    </div>
+                </div>
+
+                <!-- snackbar -->
+                <!-- <button onclick="myFunction()" style="background-color: red;">Show Snackbar</button> -->
+                <div id="snackbar">Some text some message..</div>
+                <!-- end snackbar -->
+
+            </div>
+        </div>
+    </div>
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()" style="background-color: red;">Show Snackbar</button> -->
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+
+    <script>
+        //border and color of fromsubmited
+        document.getElementById("newform").style.borderBottom = "3px solid #fff";
+        document.getElementById("newform").style.color = "#fff";
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+    </script>
+</body>
+
+</html>

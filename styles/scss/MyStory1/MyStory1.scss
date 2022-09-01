@@ -1,0 +1,49 @@
+@import "./../base";
+@import "./MyStory1_inputs";
+
+.MyStory2_img {
+  vertical-align: middle;
+  width: 94%;
+  height: 220px;
+  border-radius: 3%;
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 300px;
+    width: 95%;
+  }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    height: 320px;
+    width: 97%;
+  }
+  //ارتفاع اسلاید بار را در اکرین های بزرگ بیشتر میکنیم
+  @media (min-width: 1025px) {
+    height: 360px;
+    width: 100%;
+  }
+}
+.submitbutton {
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+  height: 45px;
+  color: $white;
+  background-color: $orange;
+  border: none;
+  border-radius: 15px;
+  white-space: nowrap;
+  padding: 0px;
+  align-items: center;
+  width: 100%;
+  &.enterbutton:hover,
+  :focus {
+    color: white;
+    border: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 23px;
+    width: 35%;
+  }
+  @media (max-width: 400px) {
+    font-size: 17px;
+  }
+}

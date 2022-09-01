@@ -1,0 +1,172 @@
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form-group-email {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+
+  @media (max-width: 576px) {
+    padding-right: 10px;
+    padding-left: 4px;
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-right: 18px;
+    padding-left: 11px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding-right: 18px;
+    padding-left: 11px;
+  }
+  @media (min-width: 1200px) {
+    padding-right: 30px;
+    padding-left: 9px;
+  }
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $Navy_blue;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $Navy_blue;
+  padding: 8px 13px;
+  overflow: visible;
+  background: transparent;
+  transition: border-color 0.2s;
+  @media (min-width: 300px) and (max-width: 350px) {
+    font-size: 0.96rem;
+    padding: 8px 13px;
+  }
+  @media (min-width: 351px) and (max-width: 400px) {
+    font-size: 1.1rem;
+    padding: 8px 13px;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  padding-right: 15px;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $Navy_blue;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $Navy_blue;
+  }
+  //padding-bottom: 6px;
+  // font-weight: 700;
+  border-width: 3px;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+.form-group-birth {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 30%;
+  direction: rtl;
+}
+.form-group-birth1 {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  direction: rtl;
+
+  /*smartphones mobiles (portrait)*/
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-left: 31px;
+  }
+  /*low resolution tablets, mobiles (landscape)*/
+  @media (min-width: 481px) and (max-width: 767px) {
+    margin-left: 78px;
+  }
+  @media (min-width: 1025px) {
+    margin-left: 55px;
+  }
+}
+
+// .form-field-birth {
+//   width: 100%;
+//   border: 0;
+//   border-bottom: 2px solid $Navy_blue;
+//   outline: 0;
+//   font-size: 1.3rem;
+//   color: $Navy_blue;
+//   padding: 6px 13px;
+//   overflow: visible;
+//   background: transparent;
+//   transition: border-color 0.2s;
+
+//   // @media (min-width: 768px) and (max-width: 1024px)  {
+//   // padding-right: 29px;
+//   // }
+
+//   &::placeholder {
+//     color: transparent;
+//   }
+
+//   &:placeholder-shown ~ .form__label {
+//     font-size: 1.3rem;
+//     cursor: text;
+//     top: 20px;
+//   }
+// }
+
+// .form-field-birth:focus {
+//   ~ .form__label {
+//     position: absolute;
+//     top: 0;
+//     display: block;
+//     transition: 0.2s;
+//     font-size: 1rem;
+//     color: $Navy_blue;
+//   }
+//   // padding-bottom: 6px;
+//   // font-weight: 700;
+//   border-width: 3px;
+// }
+// /* reset input */
+// .form-field-birth {
+//   &:required,
+//   &:invalid {
+//     box-shadow: none;
+//   }
+// }

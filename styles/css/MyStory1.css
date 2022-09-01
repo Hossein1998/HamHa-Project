@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../font/BKoodak.TTF");
+}
+
+body,
+html {
+  font-family: "MyFont";
+  height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 60px;
+  font-size: 18px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar2 {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar2.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 99999999s ease-in-out 0s;
+  transition: background-color 99999999s ease-in-out 0s;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #34456a;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #34456a;
+  padding: 11px 0px;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .form__field {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 440px) {
+  .form__field {
+    font-size: 1rem;
+  }
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #34456a;
+}
+
+.form__field:focus {
+  font-weight: 700;
+  border-width: 3px;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #34456a;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.MyStory2_img {
+  vertical-align: middle;
+  width: 94%;
+  height: 220px;
+  border-radius: 3%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .MyStory2_img {
+    height: 300px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .MyStory2_img {
+    height: 320px;
+    width: 97%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .MyStory2_img {
+    height: 360px;
+    width: 100%;
+  }
+}
+
+.submitbutton {
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+  height: 45px;
+  color: #fff;
+  background-color: #ff8b66;
+  border: none;
+  border-radius: 15px;
+  white-space: nowrap;
+  padding: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.submitbutton.enterbutton:hover,
+.submitbutton :focus {
+  color: white;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .submitbutton {
+    font-size: 23px;
+    width: 35%;
+  }
+}
+
+@media (max-width: 400px) {
+  .submitbutton {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=MyStory1.css.map */

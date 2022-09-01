@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../font/BKoodak.TTF");
+}
+
+body,
+html {
+  font-family: "MyFont";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

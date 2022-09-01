@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../../font/BKoodak.TTF");
+}
+
+body,
+html {
+  font-family: "MyFont";
+  height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 60px;
+  font-size: 18px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar2 {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar2.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 99999999s ease-in-out 0s;
+  transition: background-color 99999999s ease-in-out 0s;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #34456a;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #34456a;
+  padding: 8px 13px;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  padding-right: 15px;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #34456a;
+}
+
+.form__field:focus {
+  border-width: 3px;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #34456a;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background_div {
+  background-image: url("./../../image/SignUp3.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+
+@media (min-width: 768px) {
+  .background_div {
+    background-image: url("./../../image/page5.png");
+  }
+}
+
+.enterbutton {
+  margin-top: 60px;
+  text-decoration: none;
+  text-align: center;
+  width: 73%;
+  height: 100px;
+  font-size: 23px;
+  height: 55px;
+  color: white;
+  background-color: #34456a;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-height: 500px) and (max-height: 570px) {
+  .enterbutton {
+    margin-top: 30px;
+  }
+}
+
+.enterbutton.enterbutton:hover,
+.enterbutton :focus {
+  color: white;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .enterbutton {
+    width: 87%;
+  }
+}
+/*# sourceMappingURL=SignUp3.css.map */

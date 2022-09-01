@@ -1,0 +1,49 @@
+@import "./../base";
+
+.logo_img {
+  width: 115px;
+  height: 115px;
+  @media (min-width: 992px) and (max-width: 1024px) {
+    width: 130px;
+    height: 130px;
+  }
+  @media (min-width: 1025px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.background_div {
+  background-image: url("./../../image/Loading.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+@media (min-width: 768px) {
+  .background_div {
+    background-image: url("./../../image/page1.png");
+  }
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #34456a;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
